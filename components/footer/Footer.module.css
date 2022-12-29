@@ -1,0 +1,47 @@
+.footer {
+  background-color: var(--black);
+  padding: 5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: color .2s ease-in;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.content p {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+
+@media screen and (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav {
+    margin-bottom: 0;
+  }
+}

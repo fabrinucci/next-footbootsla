@@ -1,0 +1,20 @@
+.main {
+  margin-bottom: 5rem;
+}
+
+.content {
+  display: grid;
+  gap: 3rem;
+}
+
+.content img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
